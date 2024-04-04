@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -9,9 +15,10 @@
 }  
 nav{
     display: flex;
+    padding: 0.8% 0 0.8% 0;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color: #232B30;
 }
 .nav-links{
     flex: 1;
@@ -26,7 +33,7 @@ nav{
 .nav-links ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 18px; /*--tekst-størrelse-her--*/
 }
 .nav-links ul li ::after{
     content:"";
@@ -54,10 +61,10 @@ nav{
     display: inline-block;
     text-decoration: none;
     color: white;
-    border: 1px solid #000;
+    border: 1px solid #232B30;
     padding: 14px 55px;
-    font-size: 25px;
-    background: #000;
+    font-size: 25px; /*--tekst-størrelse-her--*/
+    background: #232B30;
     position: relative;
     cursor: pointer
 }
@@ -65,7 +72,40 @@ nav{
     border: 1px solid #ff3881;
     background: #ff3881;
     transition: 1s;
+    transform: scale(1.1);
 }
 nav.fa{
     display: none;
+}
+/*--sort-kasse--*/
+.container {
+    width: 100%;
+    height: 150px;
+}
+  
+.sort-box {
+    background-color: #232B30;
+    height: 100%;
+    display:inline-flex
+    justify-content: center;
+    align-items: center;
+}
+  
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%; 
+    padding: 5% 2%;
+}
+  
+.grid-item {
+
+    color: #fff;
+    text-align: center;
+    
+}
+/*--om game--*/
+.om-game{
+    width: 100%;
+    height: 300px;
 }
