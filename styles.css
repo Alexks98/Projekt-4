@@ -69,8 +69,7 @@ nav{
     cursor: pointer
 }
 .join-us-knap:hover{
-    border: 1px solid #ff3881;
-    background: #ff3881;
+    border: 1px solid #232B30;
     transition: 1s;
     transform: scale(1.1);
 }
@@ -156,8 +155,7 @@ nav.fa{
 
 }
 .read-more-knap:hover{
-    border: 1px solid #ff3881;
-    background: #ff3881;
+    border: 1px solid #232B30;
     transition: 1s;
     transform: scale(1.1);
 }
