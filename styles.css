@@ -77,6 +77,11 @@ nav{
 nav.fa{
     display: none;
 }
+
+
+
+
+
 /*--sort-kasse--*/
 .container {
     width: 100%;
@@ -104,8 +109,143 @@ nav.fa{
     text-align: center;
     
 }
+
+
+
+
+
 /*--om game--*/
 .om-game{
     width: 100%;
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50vh;
+  }
+  
+  .content {
+    text-align: center;
+    width: 70%;
+  }
+  
+  .centered-image {
+    width: 200px;
+    display: block;
+    margin: 20px auto 20px; 
+  }
+  
+  .centered-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    
 }
+  
+.read-more-knap{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #232B30;
+    padding: 14px 35px;
+    font-size: 25px; /*--tekst-størrelse-her--*/
+    background: #232B30;
+    position: relative;
+    cursor: pointer;
+    
+
+}
+.read-more-knap:hover{
+    border: 1px solid #ff3881;
+    background: #ff3881;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+
+
+
+/*--seperations-linje--*/
+.separator-line {
+    border-top: 2px solid #232B30;
+    width: 80%;
+    margin: 20px auto; /* Juster margenen efter behov */
+  }
+
+
+
+/*--GAME FIGHTS FOR--*/
+
+
+h1 {
+  text-align: center; /* Centrerer teksten vandret */
+  margin-top: 35px; /* Juster topmargenen efter behov */
+  margin-bottom: 35px;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+  
+.image-wrapper {
+    width: 80%; 
+    max-width: 200px; 
+    text-align: center;
+    margin: 0 auto; 
+}
+  
+.image-wrapper img {
+    width: 100%; 
+    height: auto; 
+}
+  
+.image-wrapper h3 {
+    margin-top: 10px; 
+}
+
+
+  /*--want to support game--*/
+
+.container3 {
+    background-color: #232B30;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 20px 0; 
+    padding: 35px;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .column {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box {
+    flex-grow: 1; 
+    height: 100px;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .separator {
+    margin: 0 auto;
+    border: none;
+    width: 80%;
+    border-top: 2px solid black;
+  }
+
+
+
+  /*--STORIES FROM GAME--*/
