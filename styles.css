@@ -109,7 +109,9 @@ nav{
 nav.fa{
     display: none;
 }
-
+.WhiteLogo img{
+    max-width: 100px;
+}
 
 
 
