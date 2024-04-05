@@ -109,12 +109,10 @@ nav{
 nav.fa{
     display: none;
 }
-.logo img{
-    max-width: 100px;
-    height: auto;
-}
 .logo-black{
     flex: 1;
+    max-width: 100px;
+    height: auto;
 }
 
 
