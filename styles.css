@@ -17,7 +17,7 @@ h3 {
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image:  url(img/forsidepic.jpg);
+    background-image:  url(img/forside-banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -26,7 +26,7 @@ h3 {
 .header-bisite {
     min-height: 100vh;
     width: 100%;
-    background-image:  url(img/forsidepic.jpg);
+    background-image:  url(img/get-involved-banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -35,7 +35,7 @@ h3 {
 .header-trisite {
     min-height: 100vh;
     width: 100%;
-    background-image:  url(img/forsidepic.jpg);
+    background-image:  url(img/become-volunteer-banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
