@@ -190,7 +190,8 @@ nav.fa{
 /*--sort-kasse--*/
 .container {
     width: 100%;
-    height: 150px;
+    height: 130px;
+    overflow:hidden;
 }
   
 .sort-box {
@@ -204,15 +205,37 @@ nav.fa{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2%; 
-    padding: 5% 2%;
+    padding: 4% 2%;
 }
   
 .grid-item {
     color: #fff;
-    text-align: center;  
+    text-align: center;
 }
-
-
+.map-icon-white{
+    width: 50%;
+    max-width: 70px;
+    height: auto;
+    margin-top: 2%;
+}
+.partners-icon-white{
+    width: 50%;
+    max-width: 70px;
+    height: auto;
+    margin-top: 2%;
+}
+.memebers-icon-white{
+    width: 50%;
+    max-width: 70px;
+    height: auto;
+    margin-top: 2%;
+}
+.award-white{
+    width: 50%;
+    height: auto;
+    max-width: 70px;
+    margin-top: 2%;
+}
 
 
 
