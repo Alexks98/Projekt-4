@@ -109,11 +109,11 @@ nav{
 nav.fa{
     display: none;
 }
-.logow img{
+.logo img{
     max-width: 100px;
     height: auto;
 }
-.logow{
+.logo-black{
     flex: 1;
 }
 
