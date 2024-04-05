@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+h1{
+    font-family: "Suez One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h3 {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .header {
     min-height: 100vh;
@@ -51,7 +61,12 @@ nav{
 .nav-links ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px; /*--tekst-størrelse-her--*/
+    font-size: 15px; /*--tekst-størrelse-her--*/
+    font-family: "Suez One", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    
 }
 .nav-links ul li ::after{
     content:"";
@@ -153,6 +168,7 @@ nav.fa{
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 35px;
     
 }
   
@@ -182,7 +198,8 @@ nav.fa{
 .separator-line {
     border-top: 2px solid #232B30;
     width: 80%;
-    margin: 20px auto; /* Juster margenen efter behov */
+    margin: 130px auto; /* Juster margenen efter behov */
+    margin-bottom: 0;
 }
 
 
@@ -420,6 +437,11 @@ nav1 ul li:not(:last-child) {
 nav1 ul li a {
     text-decoration: none;
     color: #000; 
+    font-family: "Suez One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    
 }
 
 .social-icons {
@@ -451,7 +473,7 @@ nav1 ul li a {
   
   .footer-text p {
     margin: 0;
-    font-size: 14px; /* Juster skriftstørrelsen som nødvendigt */
+    font-size: 12px; /* Juster skriftstørrelsen som nødvendigt */
   }
   
   .spacer {
