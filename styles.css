@@ -113,12 +113,15 @@ nav{
 nav.fa{
     display: none;
 }
-.logo-black{
-    flex: 1;
+.logo-1{
     max-width: 100px;
     height: auto;
+    margin-left: 3vw;
+    margin-top: 10%;
 }
-
+.languagebutton{
+    margin-left: 20px;
+}
 
 
 
