@@ -51,6 +51,9 @@ nav{
 .nav-links{
     flex: 1;
     text-align: right;
+ 
+    top: 0;
+    right: 0;
 }
 .nav-links ul li{
     list-style: none;
@@ -58,6 +61,7 @@ nav{
     padding: 8px 16px;
     position: relative;
 }
+
 .nav-links ul li a{
     color: white;
     text-decoration: none;
@@ -122,6 +126,51 @@ nav.fa{
 .languagebutton{
     margin-left: 20px;
 }
+
+/* Tilføj styling til burger-menuen og "x" knappen */
+#openBtn {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+#closeBtn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+  
+  /* Tilføj medieforespørgsler til at vise og skjule burger-menuen og "x" knappen */
+  @media only screen and (max-width: 767px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 12%;
+      left: 0;
+      width: 100%;
+      background-color: #232B30;
+      text-align: center;
+    }
+  
+    #openBtn {
+      display: block;
+    }
+  
+    .nav-open #openBtn {
+        display: none;
+      }
+      
+    .nav-links ul li {
+      display: block;
+      padding: 10px;
+    }
+}
+  
 
 
 

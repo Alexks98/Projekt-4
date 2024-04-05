@@ -1,15 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const burgerMenu = document.getElementById("burgerMenu");
+    const openBtn = document.getElementById("openBtn");
+    const closeBtn = document.getElementById("closeBtn");
     const navLinks = document.getElementById("navLinks");
-  
-    // Tilføj en hændelseslytter til burger-menuen
-    burgerMenu.addEventListener("click", function() {
-      // Skift visningen af menuen baseret på dens nuværende tilstand
-      if (navLinks.style.display === "none" || navLinks.style.display === "") {
-        navLinks.style.display = "block";
-        navLinks.style.width = "100%"; // Tilpas bredden til at fylde skærmen
-      } else {
-        navLinks.style.display = "none";
-      }
+    
+    // Tilføj en hændelseslytter til burger-menuen for at åbne menuen
+    openBtn.addEventListener("click", function() {
+      navLinks.style.display = "block";
+      closeBtn.style.display = "block"; // Vis "x" knappen
+      document.body.classList.add("nav-open"); // Tilføj klassen "nav-open" til body
+    });
+    
+    // Tilføj en hændelseslytter til "x" knappen for at lukke menuen
+    closeBtn.addEventListener("click", function() {
+      navLinks.style.display = "none";
+      closeBtn.style.display = "none"; // Skjul "x" knappen igen
+      document.body.classList.remove("nav-open"); // Fjern klassen "nav-open" fra body
     });
   });
