@@ -126,6 +126,19 @@ nav.fa{
 .languagebutton{
     margin-left: 20px;
 }
+.slogan{
+    position: relative;
+    top: 120px; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 90%; 
+    max-width: 400px;
+    height: auto;
+    padding: 60px;
+    text-align: center;
+}
+
+
 
 /* Tilføj styling til burger-menuen og "x" knappen */
 #openBtn {
