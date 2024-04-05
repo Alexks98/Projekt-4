@@ -109,8 +109,12 @@ nav{
 nav.fa{
     display: none;
 }
-.WhiteLogo img{
+.logow img{
     max-width: 100px;
+    height: auto;
+}
+.logow{
+    flex: 1;
 }
 
 
