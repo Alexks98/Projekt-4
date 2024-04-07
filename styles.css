@@ -211,6 +211,10 @@ nav.fa{
 .grid-item {
     color: #fff;
     text-align: center;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
     
 }
 .map-icon-white{
