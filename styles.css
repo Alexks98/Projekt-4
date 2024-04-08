@@ -412,7 +412,7 @@ h1 {
 .container4 {
     display: flex;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     justify-content: center; /* Center the .slider in the .container4 */
     align-items: center; /* Vertically align the .slider in the .container4 */
 }
@@ -420,15 +420,25 @@ h1 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}
+.image-title {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed for positioning */
+    width: 250px;
+    text-align: center;
+    background-color: whitesmoke;
+    font-size: 1em; /* Adjust as needed for text size */
+    color: black; /* Choose color that stands out from your images */
+    transform: translateZ(20px) rotateX(0deg); /* Adjust the translateZ to match image depth */
+    backface-visibility: hidden; /* Hide text when image is rotated away */
+}
   
   .slider {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     transform-style: preserve-3d;
-    animation: rotate 30s linear infinite;
+    animation: rotate 80s linear infinite;
   }
   @keyframes rotate {
     0% {
@@ -447,7 +457,7 @@ h1 {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(500px); /* 500px is an arbitrary value for the radius of the carousel */
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px); /* 500px is an arbitrary value for the radius of the carousel */
 }
   .slider span img {
     position: absolute;
@@ -460,7 +470,7 @@ h1 {
     transition: 0.5s;
   }
   .slider span:hover img {
-    transform: translateY(-50px) scale(1.2);
+    transform: translateY(-50px) scale(1.0);
   }
   
       
