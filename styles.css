@@ -295,6 +295,18 @@ nav.fa{
     transform: scale(1.1);
 }
 
+  /* CSS for aligning images with paragraphs */
+.box {
+    text-align: center; /* Center-align the content within each box */
+}
+.box img {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto 10px; /* Center the image horizontally and add some bottom margin */
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+}
+.box p {
+    text-align: left; /* Align the paragraph text to the left */
+}
 
 
 
