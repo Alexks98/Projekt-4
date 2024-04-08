@@ -35,6 +35,70 @@ const languageData={
         Press: 'PRESS',
         DonorsPartners: 'LIST OF DONORS AND PARTNERS',
         JobInternship: 'JOBS AND INTERNSHIPS',
-        WebShop: 'WEBSHOPS',
+        WebShop: 'WEBSHOP',
+    },
+    danish: {
+        NavTitle1: 'HVAD VI GØR',
+        NavTitle2: 'HVEM VI ER',
+        NavTitle3: 'HVOR VI ARBEJDE',
+        NavTitle4: 'BLIV INVOLVERET',
+
+        JoinUs: 'VÆR MED',
+
+        Globe: '9 LANDE',
+        HandShake: '40 PARTNERE',
+        Members: '135 MEDLEMMER',
+        Awards: '19 PRISER',
+
+        AboutDescription: 'GAME stræber efter en verden lige muligheder for alle børn og unge. GAME er en international NGO, der arbejder for social forandring gennem ungdomsledet gadesport og kultur i Afrika, Europa og Mellemøsten',
+        AboutReadMore: 'LÆS MERE',
+
+        FightForTitle: 'GAME KÆMPE FOR',
+        Empowerment: 'Empowerment',
+        Leadership: 'Ledelse',
+        Sustainability: 'Bærdygtighed',
+        Innovation: 'Innovation',
+
+        SupportGame: 'ØNSKER AT STØTTE GAME',
+        Donation: 'Give en donation',
+        BecomePartner: 'Bliv forretningspartner',
+        SupportWebShop: 'Støt vores webshop her! Købskraftdrift: Køb for at finansiere vores daglige effekt.',
+        ProgrammeDonor: 'Bliv programdonor! Sponsorprogrammer, opretholde succes: Din finansiering holder initiativer i gang',
+
+        StoriesGane: 'HISTORIER FRA GAME',
+
+        Contact: 'KONTAKT',
+        Booking: 'BESTILLING',
+        Press: 'NYHEDER',
+        DonorsPartners: 'LISTE OVER DONORER OG PARTNERE',
+        JobInternship: 'JOB OG PRAKTIK',
+        WebShop: 'WEBSHOP',
     }
+};
+
+//This is the function to toggle between English and Dansih
+function toggleLanguage() {
+    const currentLanguage=document.documentElement.lang;
+    const newLanguage=currentLanguage==='EN'?'DA':'EN';
+
+    document.documentElement.lang=newLanguage;
+    updateText(newLanguage);
+}
+
+//This is to update the text based on what language they choose
+function updateText(language) {
+    const{NavTitle1, NavTitle2, NavTitle3, NavTitle4, JoinUs, Globe, HandShake, Members, Awards, AboutDescription, AboutReadMore, FightForTitle, Empowerment, Leadership, Sustainability, Innovation, SupportGame, Donation, BecomePartner, SupportWebShop, ProgrammeDonor, StoriesGane, Contact, Booking, Press, DonorsPartners, JobInternship, WebShop}=languageData[language];
+    document.getElementById('NavTitle1').textContent=NavTitle1;
+    document.getElementById('NavTitle2').textContent=NavTitle2;
+    document.getElementById('NavTitle3').textContent=NavTitle3;
+    document.getElementById('NavTitle4').textContent=NavTitle4;
+    document.getElementById('JoinUs').textContent=JoinUs;
+    document.getElementById('Globe').textContent=Globe;
+    document.getElementById('HandShake').textContent=HandShake;
+    document.getElementById('Members').textContent=Members;
+    document.getElementById('Awards').textContent=Awards;
+    document.getElementById('AbourDescription').textContent=AboutDescription;
+    document.getElementById('AboutReadMore').textContent=AboutReadMore;
+    document.getElementById('FightForTitle').textContent=FightForTitle;
+    document.getElementById('Empowerment').textContent=Empowerment;
 }
