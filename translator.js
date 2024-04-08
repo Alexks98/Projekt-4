@@ -25,8 +25,8 @@ const languageData={
         SupportGame: 'WANT TO SUPPORT GAME',
         Donation: 'Make a donation',
         BecomePartner: 'Become a business partner',
-        SupportWebShop: 'Support our webshop where',
-        ProgrammeDonor: 'Become a program donor something',
+        SupportWebShop: 'Support our webshop here! Purchases Power Operations: Shop to Fund Our Day-to-Day Impact.',
+        ProgrammeDonor: 'Become a program donor! Sponsor Programs, Sustain Success: Your Funding Keeps Initiatives Thriving',
 
         StoriesGane: 'STORIES FROM GAME',
 
