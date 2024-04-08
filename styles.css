@@ -128,11 +128,11 @@ nav.fa{
 }
 .slogan{
     position: relative;
-    top: 80px; 
+    top: 120px; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 90%; 
-    max-width: 370px;
+    max-width: 400px;
     height: auto;
     padding: 60px;
     text-align: center;
