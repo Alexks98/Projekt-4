@@ -14,14 +14,15 @@
 <body>
 <!--header og menubar-->
 <section class="header">
-  <header class="navigation-header">
   <nav>
-       <div>
-          <a href="index.html">
-            <img src="./img/logo-white.png" alt="logo-white" class="logo-1">
-          </a>
-      </div>
+    <div>
+      <a href="index.html">
+        <img src="./img/logo-white.png" alt="logo-white" class="logo-1">
+      </a>
+      <i class="fa fa-times" id="closeBtn"></i>
+    </div>
     <div class="nav-links" id="navLinks">
+
       <ul>
         <li><a href="index.html" id="NavTitle1">WHAT WE DO</a></li>
         <li><a id="NavTitle2">WHO WE ARE</a></li>
@@ -30,13 +31,8 @@
         <button onclick="toggleLanguage()">Switch Language</button>
       </ul>
     </div>
-    <div class="hamburger">
-      <span id="openHam">&#9776;</span>
-      <span id="closeHam">&#x2716;</span>
-  </div>
+    <i class="fa fa-bars" id="openBtn"></i>
   </nav>
-</header>
-
   <div class="knap-box">
     <a href="get-involved.html" class="join-us-knap" id="JoinUs">JOIN US</a>
   </div>

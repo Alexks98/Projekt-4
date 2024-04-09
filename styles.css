@@ -1,9 +1,8 @@
-*, body {
-    padding: 0;
+*{
     margin: 0;
-    box-sizing: border-box;
-  }
-  
+    padding: 0;
+}
+
 h1{
     font-family: "Suez One", serif;
     font-weight: 400;
@@ -42,26 +41,20 @@ h3 {
     position: relative;
     background-position-y: 32%; 
 } 
-.navigation-header {
-    background-color: #232B30;;
-    padding: 0 15px;
-    height: 60px;
+nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  nav {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
+    padding: 0.8% 0 0.8% 0;
     justify-content: space-between;
     align-items: center;
-  }
-  .nav-links {
-    display: flex;
-    gap: 40px;
-  }
-
+    background-color: #232B30;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+ 
+    top: 0;
+    right: 0;
+}
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -93,7 +86,7 @@ h3 {
 }
 
 .knap-box{
-    width: 240px;
+    width: 90%;
     color: #fff;
     position: absolute;
     top: 50%;
@@ -121,13 +114,14 @@ h3 {
     transition: 1s;
     transform: scale(1.1);
 }
-
+nav.fa{
+    display: none;
+}
 .logo-1{
     max-width: 100px;
     height: auto;
     margin-left: 3vw;
     margin-top: 10%;
-    
 }
 .languagebutton{
     margin-left: 20px;
@@ -144,49 +138,51 @@ h3 {
     text-align: center;
 }
 
-.hamburger {
+
+
+/* Tilføj styling til burger-menuen og "x" knappen */
+#openBtn {
     display: none;
-    font-size: 20px;
-    font-weight: 800;
+    cursor: pointer;
     color: white;
+    font-size: 24px;
+    margin-right: 20px;
   }
+#closeBtn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
   
-
+  /* Tilføj medieforespørgsler til at vise og skjule burger-menuen og "x" knappen */
   @media only screen and (max-width: 767px) {
-    .hamburger {
-        display: flex;
-        cursor: pointer;
-      }
-      .hamburger #closeHam {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 12%;
+      left: 0;
+      width: 100%;
+      background-color: #232B30;
+      text-align: center;
+    }
+  
+    #openBtn {
+      display: block;
+    }
+  
+    .nav-open #openBtn {
         display: none;
       }
-
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: 0;
-        top: 58px;
-        background-color: #232B30;;
-        width: 100%;
-        height: calc(100vh - 58px);
-        padding-top: 60px;
-        gap: 10vh;
-      }
-
+      
     .nav-links ul li {
       display: block;
       padding: 10px;
     }
-
-    .nav-links.active .slogan,
-    .nav-links.active .join-us-knap {
-        display: none;
-    }
 }
-
-
   
 
 
@@ -349,7 +345,7 @@ h1 {
 
 
 
-/*--ways to support game--*/
+/*--want to support game--*/
 
 .container3 {
     background-color: #232B30;
