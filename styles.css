@@ -41,21 +41,7 @@ h3 {
     position: relative;
     background-position-y: 32%; 
 } 
-<<<<<<< HEAD
 nav{
-=======
-.navigation-header {
-    background-color: #232B30;;
-    padding: 0 15px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  nav {
-    width: 100%;
-    
->>>>>>> 92c59398cdcdfc34f0a46cdc3bac04b2dc325220
     display: flex;
     padding: 0.8% 0 0.8% 0;
     justify-content: space-between;
@@ -309,6 +295,20 @@ nav.fa{
     transform: scale(1.1);
 }
 
+  /* CSS for aligning images with paragraphs */
+.box {
+    text-align: center; /* Center-align the content within each box */
+}
+.box img {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto 10px; /* Center the image horizontally and add some bottom margin */
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+}
+.box p {
+    text-align: left; /* Align the paragraph text to the left */
+}
+
+
 
 /*--seperations-linje--*/
 .separator-line {
@@ -359,11 +359,7 @@ h1 {
 
 
 
-<<<<<<< HEAD
 /*--want to support game--*/
-=======
-/*--Ways to support GAME--*/
->>>>>>> 92c59398cdcdfc34f0a46cdc3bac04b2dc325220
 
 .container3 {
     background-color: #232B30;
@@ -392,25 +388,41 @@ h1 {
     height: 100px;
     color: #fff;
     margin: 20px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
   
 .separator {
     margin: 0 auto;
     border: none;
     width: 80%;
-    border-top: 2px solid white;
+    border-top: 2px solid black;
 }
 
-.donation-icon, .partnership-icon, .purchase-icon, .sponser-icon  {
+.donation-icon {
     width: 70px;
     height: 70px;
-    margin-right: 10px;
-    margin-left: 10px;
 }
+
+.partnership-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.purchase-icon {
+    width: 70px;
+    height: 70px;
+
+}
+
+.sponser-icon {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
 
 
 
