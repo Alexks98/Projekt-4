@@ -397,7 +397,7 @@ h1 {
 .donation-icon {
     width: 70px;
     height: 70px;
-    margin-left: 20pc;
+    margin-left: 0 auto;
 }
 
 .partnership-icon {
