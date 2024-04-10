@@ -299,20 +299,6 @@ h3 {
     transform: scale(1.1);
 }
 
-  /* CSS for aligning images with paragraphs */
-.box {
-    text-align: center; /* Center-align the content within each box */
-}
-.box img {
-    display: block; /* Make the image a block-level element */
-    margin: 0 auto 10px; /* Center the image horizontally and add some bottom margin */
-    max-width: 100%; /* Ensure images don't exceed the width of their container */
-}
-.box p {
-    text-align: left; /* Align the paragraph text to the left */
-}
-
-
 
 /*--seperations-linje--*/
 .separator-line {
@@ -401,30 +387,6 @@ h1 {
     width: 80%;
     border-top: 2px solid black;
 }
-
-.donation-icon {
-    width: 70px;
-    height: 70px;
-}
-
-.partnership-icon {
-    width: 70px;
-    height: 70px;
-}
-
-.purchase-icon {
-    width: 70px;
-    height: 70px;
-
-}
-
-.sponser-icon {
-    width: 70px;
-    height: 70px;
-}
-
-
-
 
 
 
