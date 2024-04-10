@@ -1,8 +1,9 @@
-*{
-    margin: 0;
+*, body {
     padding: 0;
-}
-
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
 h1{
     font-family: "Suez One", serif;
     font-weight: 400;
@@ -41,20 +42,26 @@ h3 {
     position: relative;
     background-position-y: 32%; 
 } 
-nav{
+.navigation-header {
+    background-color: #232B30;;
+    padding: 0 15px;
+    height: 60px;
     display: flex;
-    padding: 0.8% 0 0.8% 0;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+    
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #232B30;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
- 
-    top: 0;
-    right: 0;
-}
+  }
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
@@ -86,7 +93,7 @@ nav{
 }
 
 .knap-box{
-    width: 90%;
+    width: 240px;
     color: #fff;
     position: absolute;
     top: 50%;
@@ -114,14 +121,13 @@ nav{
     transition: 1s;
     transform: scale(1.1);
 }
-nav.fa{
-    display: none;
-}
+
 .logo-1{
     max-width: 100px;
     height: auto;
     margin-left: 3vw;
     margin-top: 10%;
+    
 }
 .languagebutton{
     margin-left: 20px;
@@ -138,51 +144,49 @@ nav.fa{
     text-align: center;
 }
 
-
-
-/* Tilføj styling til burger-menuen og "x" knappen */
-#openBtn {
+.hamburger {
     display: none;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: 800;
     color: white;
-    font-size: 24px;
-    margin-right: 20px;
   }
-#closeBtn {
-    display: none;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-}
   
-  /* Tilføj medieforespørgsler til at vise og skjule burger-menuen og "x" knappen */
+
   @media only screen and (max-width: 767px) {
-    .nav-links {
-      display: none;
-      position: absolute;
-      top: 12%;
-      left: 0;
-      width: 100%;
-      background-color: #232B30;
-      text-align: center;
-    }
-  
-    #openBtn {
-      display: block;
-    }
-  
-    .nav-open #openBtn {
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+      }
+      .hamburger #closeHam {
         display: none;
       }
-      
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        background-color: #232B30;;
+        width: 100%;
+        height: calc(100vh - 58px);
+        padding-top: 60px;
+        gap: 10vh;
+      }
+
     .nav-links ul li {
       display: block;
       padding: 10px;
     }
+
+    .nav-links.active .slogan,
+    .nav-links.active .join-us-knap {
+        display: none;
+    }
 }
+
+
   
 
 
@@ -295,20 +299,6 @@ nav.fa{
     transform: scale(1.1);
 }
 
-  /* CSS for aligning images with paragraphs */
-.box {
-    text-align: center; /* Center-align the content within each box */
-}
-.box img {
-    display: block; /* Make the image a block-level element */
-    margin: 0 auto 10px; /* Center the image horizontally and add some bottom margin */
-    max-width: 100%; /* Ensure images don't exceed the width of their container */
-}
-.box p {
-    text-align: left; /* Align the paragraph text to the left */
-}
-
-
 
 /*--seperations-linje--*/
 .separator-line {
@@ -359,7 +349,7 @@ h1 {
 
 
 
-/*--ways to support game--*/
+/*--Ways to support GAME--*/
 
 .container3 {
     background-color: #232B30;
@@ -388,41 +378,25 @@ h1 {
     height: 100px;
     color: #fff;
     margin: 20px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 .separator {
     margin: 0 auto;
     border: none;
     width: 80%;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
 }
 
-.donation-icon {
+.donation-icon, .partnership-icon, .purchase-icon, .sponser-icon  {
     width: 70px;
     height: 70px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
-
-.partnership-icon {
-    width: 70px;
-    height: 70px;
-}
-
-.purchase-icon {
-    width: 70px;
-    height: 70px;
-
-}
-
-.sponser-icon {
-    width: 70px;
-    height: 70px;
-}
-
-
-
-
-
 
 
 
@@ -436,12 +410,6 @@ h1 {
 
 
 /*-----------------------STORIES FROM GAME----------------------*/
-h1 {
-    margin: 20px 0; 
-    padding: 35px;
-    color: #232B30;
-}
-.gallery{
 .gallery {
     width: 100%;
 }
@@ -527,7 +495,7 @@ h1 {
 }
 
 .gallery-controls-previous::before {
-    border: solid #232B30;
+    border: solid #000;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -549,7 +517,7 @@ h1 {
 }
 
 .gallery-controls-next::before {
-    border: solid #232B30;
+    border: solid #000;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -715,6 +683,5 @@ nav1 ul li a {
     margin-right: 20px; /* Juster margenen mellem ordene som nødvendigt */
   }
   
-
 
 
