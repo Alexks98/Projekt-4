@@ -388,7 +388,26 @@ h1 {
     border-top: 2px solid black;
 }
 
+.donation-icon {
+    width: 70px;
+    height: 70px;
+}
 
+.partnership-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.purchase-icon {
+    width: 70px;
+    height: 70px;
+
+}
+
+.sponser-icon {
+    width: 70px;
+    height: 70px;
+}
 
 
 /*--STORIES FROM GAME--*/
