@@ -349,7 +349,7 @@ h1 {
 
 
 
-/*--ways to support game--*/
+/*--Ways to support GAME--*/
 
 .container3 {
     background-color: #232B30;
@@ -381,10 +381,7 @@ h1 {
     text-align: left;
     display: flex;
     align-items: center;
-}
-
-.p {
-    margin-left: 1pc;
+    justify-content: center;
 }
   
 .separator {
@@ -394,28 +391,10 @@ h1 {
     border-top: 2px solid white;
 }
 
-.donation-icon {
+.donation-icon, .partnership-icon, .purchase-icon, .sponser-icon  {
     width: 70px;
     height: 70px;
-    margin-left: 0 auto;
-}
-
-.partnership-icon {
-    width: 70px;
-    height: 70px;
-    margin-left: 20pc;
-}
-
-.purchase-icon {
-    width: 70px;
-    height: 70px;
-    margin-left: 20pc;
-}
-
-.sponser-icon {
-    width: 70px;
-    height: 70px;
-    margin-left: 20pc;
+    margin-right: 10px;
 }
 
 
