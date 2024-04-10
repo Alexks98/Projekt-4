@@ -36,6 +36,7 @@ const languageData={
         DonorsPartners: 'LIST OF DONORS AND PARTNERS',
         JobInternship: 'JOBS AND INTERNSHIPS',
         WebShop: 'WEBSHOP',
+        buttonText: 'English'
     },
     danish: {
         NavTitle1: 'HVAD VI GØR',
@@ -73,6 +74,7 @@ const languageData={
         DonorsPartners: 'LISTE OVER DONORER OG PARTNERE',
         JobInternship: 'JOB OG PRAKTIK',
         WebShop: 'WEBSHOP',
+        buttonText: 'Danish'
     }
 };
 
@@ -101,4 +103,30 @@ function updateText(language) {
     document.getElementById('AboutReadMore').textContent=AboutReadMore;
     document.getElementById('FightForTitle').textContent=FightForTitle;
     document.getElementById('Empowerment').textContent=Empowerment;
+    document.getElementById('Leadership').textContent=Leadership;
+    document.getElementById('Sustainability').textContent=Sustainability;
+    document.getElementById('Innovation').textContent=Empowerment;
+    document.getElementById('SupportGame').textContent=SupportGame;
+    document.getElementById('Donation').textContent=Donation;
+    document.getElementById('BecomePartner').textContent=BecomePartner;
+    document.getElementById('SupportWebShop').textContent=SupportWebShop;
+    document.getElementById('StoriesGame').textContent=StoriesGame;
+    document.getElementById('Contact').textContent=Contact;
+    document.getElementById('Booking').textContent=Booking;
+    document.getElementById('Press').textContent=Press;
+    document.getElementById('DonorsPartners').textContent=DonorsPartners;
+    document.getElementById('JobInternship').textContent=JobInternship;
+    document.getElementById('WebShop').textContent=WebShops;
+    document.getElementById('button').textContent=buttonText;
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -9,29 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Suez+One&display=swap" rel="stylesheet">
     <script src="menu.js" defer></script>
+    <script src="translator.js" defer></script>
 </head>
 <body>
 <!--header og menubar-->
 <section class="header">
+  <header class="navigation-header">
   <nav>
-    <div>
-      <a href="index.html">
-        <img src="./img/logo-white.png" alt="logo-white" class="logo-1">
-      </a>
-      <i class="fa fa-times" id="closeBtn"></i>
-    </div>
+       <div>
+          <a href="index.html">
+            <img src="./img/logo-white.png" alt="logo-white" class="logo-1">
+          </a>
+      </div>
     <div class="nav-links" id="navLinks">
-
       <ul>
         <li><a href="index.html" id="NavTitle1">WHAT WE DO</a></li>
         <li><a id="NavTitle2">WHO WE ARE</a></li>
         <li><a id="NavTitle3"> WHERE WE WORK</a></li>
         <li><a href="get-involved.html" id="NavTitle4">GET INVOLVED</a></li>  
-        <li><a onclick="toggleLanguages()" class="languagebutton">EN</a></li>
+        <button onclick="toggleLanguage()">Switch Language</button>
       </ul>
     </div>
-    <i class="fa fa-bars" id="openBtn"></i>
+    <div class="hamburger">
+      <span id="openHam">&#9776;</span>
+      <span id="closeHam">&#x2716;</span>
+  </div>
   </nav>
+</header>
+
   <div class="knap-box">
     <a href="get-involved.html" class="join-us-knap" id="JoinUs">JOIN US</a>
   </div>
@@ -115,23 +120,30 @@
     <h1 id="SupportGame"> WAYS TO SUPPORT GAME</h1>
     <div class="columns">
       <div class="column">
-        <div class="box"> <p id="Donation">Make a donation! Donations Boost Capacity: More Resources for Community Impact</p> </div>
+        <div class="box"> 
+          <p id="Donation"> Make a donation! <br> Donations Boost Capacity: More Resources for Community Impact</p> 
+          <img src="img/donation-icon.png" alt="Donation Icon" class="donation-icon">
+        </div>
         <hr class="separator">
-        <div class="box"> <p id="BecomePartner">Become an business partner! Partnerships Drive Growth: Collaborate for Expanded Reach</p> </div>
+        <div class="box"> 
+          <p id="BecomePartner">Become a business partner! <br> Drive Growth: Collaborate for Expanded Reach</p>
+          <img src="img/partnership-icon.png" alt="Partnership Icon" class="partnership-icon"> 
+        </div>
+
       </div>
       <div class="column">
-        <div class="box"> <img src="img/t-shirt-icon.png" alt="Purchase Icon" class="purchase-icon">
-          <p id="SupportWebShop">Support our webshop here! Purchases Power Operations: Shop to Fund Our Day-to-Day Impact </p></div>
+        <div class="box"> 
+          <p id="SupportWebShop">Support our webshop here! Purchases Power Operations: Shop to Fund Our Day-to-Day Impact </p>
+          <img src="img/t-shirt-icon.png" alt="Purchase Icon" class="purchase-icon">
+        </div>
         <hr class="separator">
-        <div class="box"> <img src="img/sponser-icon.png" alt="Sponser Icon" class="sponser-icon">
-          <p id="ProgramDonor">Become a program donor! Sponsor Programs, Sustain Success: Your Funding Keeps Initiatives Thriving</p></div>
+        <div class="box"> 
+          <p id="ProgramDonor"> Become a program donor! Sponsor Programs, Sustain Success: Your Funding Keeps Initiatives Thriving</p>
+          <img src="img/sponser-icon.png" alt="Sponser Icon" class="sponser-icon">
+        </div>
       </div>
     </div>
   </div>
-
-
-
-
 
 
 

@@ -1,19 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const openBtn = document.getElementById("openBtn");
-    const closeBtn = document.getElementById("closeBtn");
-    const navLinks = document.getElementById("navLinks");
-    
-    // Tilføj en hændelseslytter til burger-menuen for at åbne menuen
-    openBtn.addEventListener("click", function() {
-      navLinks.style.display = "block";
-      closeBtn.style.display = "block"; // Vis "x" knappen
-      document.body.classList.add("nav-open"); // Tilføj klassen "nav-open" til body
-    });
-    
-    // Tilføj en hændelseslytter til "x" knappen for at lukke menuen
-    closeBtn.addEventListener("click", function() {
-      navLinks.style.display = "none";
-      closeBtn.style.display = "none"; // Skjul "x" knappen igen
-      document.body.classList.remove("nav-open"); // Fjern klassen "nav-open" fra body
-    });
-  });
+let openHam = document.querySelector('#openHam');
+let closeHam = document.querySelector('#closeHam');
+let navigationItems = document.querySelector('#navLinks');
+
+const hamburgerEvent = (navigation, close, open) => {
+  navigationItems.style.display = navigation;
+  closeHam.style.display = close;
+  openHam.style.display = open;
+
+
+  if (navigation === 'flex') {
+      navigationItems.classList.add('active');
+      // Skjul slogan og "Join Us" -knappen når hamburgermenuen er åben
+      document.querySelector('.slogan').style.display = 'none';
+      document.querySelector('.join-us-knap').style.display = 'none';
+  } else {
+      navigationItems.classList.remove('active');
+      // Vis slogan og "Join Us" -knappen når hamburgermenuen er lukket
+      document.querySelector('.slogan').style.display = 'block';
+      document.querySelector('.join-us-knap').style.display = 'block';
+  }
+
+};
+openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
+
+
+
