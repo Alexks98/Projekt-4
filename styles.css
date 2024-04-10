@@ -52,7 +52,7 @@ h3 {
   }
   nav {
     width: 100%;
-    max-width: 1200px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -349,7 +349,7 @@ h1 {
 
 
 
-/*--ways to support game--*/
+/*--Ways to support GAME--*/
 
 .container3 {
     background-color: #232B30;
@@ -378,35 +378,24 @@ h1 {
     height: 100px;
     color: #fff;
     margin: 20px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 .separator {
     margin: 0 auto;
     border: none;
     width: 80%;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
 }
 
-.donation-icon {
+.donation-icon, .partnership-icon, .purchase-icon, .sponser-icon  {
     width: 70px;
     height: 70px;
-}
-
-.partnership-icon {
-    width: 70px;
-    height: 70px;
-}
-
-.purchase-icon {
-    width: 70px;
-    height: 70px;
-
-}
-
-.sponser-icon {
-    width: 70px;
-    height: 70px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 
@@ -610,6 +599,15 @@ h1 {
     max-height: 80%; 
     margin-bottom: 50px;
 }
+
+/*--newsletter--*/
+
+.nyhedsbrev {
+    text-align: center;
+    background-color: white;
+    
+}
+  
 
 
 
