@@ -1,4 +1,5 @@
 //This is for the English - Danish Translation of Texts
+
 const languageData={
     english:{
         NavTitle1: 'WHAT WE DO',
@@ -26,7 +27,7 @@ const languageData={
         Donation: 'Make a donation',
         BecomePartner: 'Become a business partner',
         SupportWebShop: 'Support our webshop here! Purchases Power Operations: Shop to Fund Our Day-to-Day Impact.',
-        ProgrammeDonor: 'Become a program donor! Sponsor Programs, Sustain Success: Your Funding Keeps Initiatives Thriving',
+        programDonor: 'Become a program donor! Sponsor Programs, Sustain Success: Your Funding Keeps Initiatives Thriving',
 
         StoriesGane: 'STORIES FROM GAME',
 
@@ -64,7 +65,7 @@ const languageData={
         Donation: 'Give en donation',
         BecomePartner: 'Bliv forretningspartner',
         SupportWebShop: 'Støt vores webshop her! Købskraftdrift: Køb for at finansiere vores daglige effekt.',
-        ProgrammeDonor: 'Bliv programdonor! Sponsorprogrammer, opretholde succes: Din finansiering holder initiativer i gang',
+        programDonor: 'Bliv programdonor! Sponsorprogrammer, opretholde succes: Din finansiering holder initiativer i gang',
 
         StoriesGane: 'HISTORIER FRA GAME',
 
@@ -81,44 +82,48 @@ const languageData={
 //This is the function to toggle between English and Dansih
 function toggleLanguage() {
     const currentLanguage=document.documentElement.lang;
-    const newLanguage=currentLanguage==='EN'?'DA':'EN';
+    const newLanguage=currentLanguage==='english'?'danish':'english';
 
     document.documentElement.lang=newLanguage;
-    updateText(newLanguage);
+    updateText('danish');
 }
 
 //This is to update the text based on what language they choose
 function updateText(language) {
-    const{NavTitle1, NavTitle2, NavTitle3, NavTitle4, JoinUs, Globe, HandShake, Members, Awards, AboutDescription, AboutReadMore, FightForTitle, Empowerment, Leadership, Sustainability, Innovation, SupportGame, Donation, BecomePartner, SupportWebShop, ProgrammeDonor, StoriesGane, Contact, Booking, Press, DonorsPartners, JobInternship, WebShop}=languageData[language];
-    document.getElementById('NavTitle1').textContent=NavTitle1;
-    document.getElementById('NavTitle2').textContent=NavTitle2;
-    document.getElementById('NavTitle3').textContent=NavTitle3;
-    document.getElementById('NavTitle4').textContent=NavTitle4;
-    document.getElementById('JoinUs').textContent=JoinUs;
-    document.getElementById('Globe').textContent=Globe;
-    document.getElementById('HandShake').textContent=HandShake;
-    document.getElementById('Members').textContent=Members;
-    document.getElementById('Awards').textContent=Awards;
-    document.getElementById('AbourDescription').textContent=AboutDescription;
-    document.getElementById('AboutReadMore').textContent=AboutReadMore;
-    document.getElementById('FightForTitle').textContent=FightForTitle;
-    document.getElementById('Empowerment').textContent=Empowerment;
-    document.getElementById('Leadership').textContent=Leadership;
-    document.getElementById('Sustainability').textContent=Sustainability;
-    document.getElementById('Innovation').textContent=Empowerment;
-    document.getElementById('SupportGame').textContent=SupportGame;
-    document.getElementById('Donation').textContent=Donation;
-    document.getElementById('BecomePartner').textContent=BecomePartner;
-    document.getElementById('SupportWebShop').textContent=SupportWebShop;
-    document.getElementById('StoriesGame').textContent=StoriesGame;
-    document.getElementById('Contact').textContent=Contact;
-    document.getElementById('Booking').textContent=Booking;
-    document.getElementById('Press').textContent=Press;
-    document.getElementById('DonorsPartners').textContent=DonorsPartners;
-    document.getElementById('JobInternship').textContent=JobInternship;
-    document.getElementById('WebShop').textContent=WebShops;
-    document.getElementById('button').textContent=buttonText;
+    const{navTitle1, navTitle2, navTitle3, navTitle4, joinUs, globe, handShake, members, awards, aboutDescription, aboutReadMore, fightForTitle, empowerment, leadership, sustainability, innovation, supportGame, donation, becomePartner, supportWebShop, programmeDonor, storiesGane, contact, booking, press, donorsPartners, jobInternship, webShop}=languageData[language];
+    document.getElementById('navTitle1').textContent=navTitle1;
+    document.getElementById('navTitle2').textContent=navTitle2;
+    document.getElementById('navTitle3').textContent=navTitle3;
+    document.getElementById('navTitle4').textContent=navTitle4;
+    document.getElementById('joinUs').textContent=joinUs;
+    document.getElementById('globe').textContent=globe;
+    document.getElementById('handShake').textContent=handShake;
+    document.getElementById('members').textContent=members;
+    document.getElementById('awards').textContent=awards;
+    document.getElementById('aboutDescription').textContent=aboutDescription;
+    document.getElementById('aboutReadMore').textContent=aboutReadMore;
+    document.getElementById('fightForTitle').textContent=fightForTitle;
+    document.getElementById('empowerment').textContent=empowerment;
+    document.getElementById('leadership').textContent=leadership;
+    document.getElementById('sustainability').textContent=sustainability;
+    document.getElementById('innovation').textContent=empowerment;
+    document.getElementById('supportGame').textContent=supportGame;
+    document.getElementById('donation').textContent=donation;
+    document.getElementById('becomePartner').textContent=becomePartner;
+    document.getElementById('supportWebShop').textContent=supportWebShop;
+    document.getElementById('programDonor').textContent=programDonor;
+   // document.getElementById('storiesGame').textContent=storiesGame;
+    document.getElementById('contact').textContent=contact;
+    document.getElementById('booking').textContent=booking;
+    document.getElementById('press').textContent=press;
+    document.getElementById('donorsPartners').textContent=donorsPartners;
+    document.getElementById('jobInternship').textContent=jobInternship;
+    document.getElementById('webShop').textContent=webShop;
+   // document.getElementById('button').textContent=buttonText;
 }
+
+
+
 
 
 
