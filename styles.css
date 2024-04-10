@@ -359,7 +359,7 @@ h1 {
 
 
 
-/*--want to support game--*/
+/*--ways to support game--*/
 
 .container3 {
     background-color: #232B30;
@@ -436,6 +436,11 @@ h1 {
 
 
 /*-----------------------STORIES FROM GAME----------------------*/
+h1 {
+    margin: 20px 0; 
+    padding: 35px;
+    color: #232B30;
+}
 .gallery{
     width: 100%;
 }
@@ -521,7 +526,7 @@ h1 {
 }
 
 .gallery-controls-previous::before {
-    border: solid #000;
+    border: solid #232B30;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -543,7 +548,7 @@ h1 {
 }
 
 .gallery-controls-next::before {
-    border: solid #000;
+    border: solid #232B30;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
