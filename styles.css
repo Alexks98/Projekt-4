@@ -100,7 +100,7 @@ h3 {
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.join-us-knap{
+.CTA{
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -115,7 +115,7 @@ h3 {
     font-style: normal;
 
 }
-.join-us-knap:hover{
+.CTA:hover{
     border: 1px solid #232B30;
     transition: 1s;
     transform: scale(1.1);
@@ -646,7 +646,7 @@ input[type="email"] {
     width: 600px;
 }
 
-button2 {
+CTA2 {
     margin-left: 10px;
     margin-top: 15px;
     margin-bottom: 1px;
@@ -662,7 +662,7 @@ button2 {
     border: none;
 }
  
-button:hover {
+CTA2:hover {
 
 }
 
