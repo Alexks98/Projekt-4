@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt 4</title>
@@ -8,74 +8,83 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Suez+One&display=swap" rel="stylesheet">
-    <script src="menu.js" defer></script>
+    <script src="javascript/menu.js" defer></script>
+    <script src="javascript/translator.js" defer></script>
+    <script src="javascript/carousel.js" defer></script>
 </head>
 <body>
 <!--header og menubar-->
 <section class="header-trisite">
+  <header class="navigation-header">
   <nav>
-    <div>
-      <a href="index.html">
-        <img src="./img/logo-white.png" alt="logo-white" class="logo-1">
-      </a>
-      <i class="fa fa-times" id="closeBtn"></i>
-    </div>
+       <div>
+          <a href="index.html">
+            <img src="./img/logo-white.png" alt="logo-white" class="logo-1">
+          </a>
+      </div>
     <div class="nav-links" id="navLinks">
-
       <ul>
-        <li><a href="index.html">WHAT WE DO</a></li>
-        <li><a>WHO WE ARE</a></li>
-        <li><a> WHERE WE WORK</a></li>
-        <li><a href="get-involved.html">GET INVOLVED</a></li>  
-        <li><a class="languagebutton">EN</a></li>
+        <li><a href="index.html" id="NavTitle1">WHAT WE DO</a></li>
+        <li><a id="NavTitle2">WHO WE ARE</a></li>
+        <li><a id="NavTitle3"> WHERE WE WORK</a></li>
+        <li><a href="get-involved.html" id="NavTitle4">GET INVOLVED</a></li>  
+        <button onclick="toggleLanguage()">EN</button>
       </ul>
     </div>
-    <i class="fa fa-bars" id="openBtn"></i>
+    <div class="hamburger">
+      <span id="openHam">&#9776;</span> <!--burger-->
+      <span id="closeHam">&#x2716;</span> <!--kryds-->
+  </div>
   </nav>
-
+</header>
 </section>
 
 
 
 <!--Become a Volunteer-->
 
-<h1> BECOME A VOLUNTEER AT GAME</h1>
 
-<div class="container4">
-
-    <div class="image-wrapper">
-      <img src="img/skal-slettes.png" alt="Billede 1">
-      <h3> DENMARK</h3>
-    </div>
-    <div class="image-wrapper">
-      <img src="img/skal-slettes.png" alt="Billede 2">
-      <h3> Norway</h3>
-    </div>
-    <div class="image-wrapper">
-      <img src="img/skal-slettes.png" alt="Billede 3">
-      <h3>Ghana</h3>
-    </div>
-    <div class="image-wrapper">
-      <img src="img/skal-slettes.png" alt="Billede 4">
-      <h3>Jordan</h3>
-    </div>
+  <div class="h1-sort">
+    <h1>  BECOME A VOLUNTEER AT GAME</h1>
   </div>
-
-  <div class="container5">
-
-    <div class="image-wrapper1">
-      <img src="img/skal-slettes.png" alt="Billede 1">
-      <h3> Tunisia</h3>
+  
+  <div class="billede-container">
+  
+      <div class="image-wrapper">
+          <a href="volunteer.html">
+              <img src="img/denmark.png" alt="Billede 1">   
+          </a>
+          <div class="h3-sort"><h3> DENMARK</h3></div>
+      </div>
+      <div class="image-wrapper">
+        <img src="img/norway.png" alt="Billede 2">
+        <h3> Norway</h3>
+      </div>
+      <div class="image-wrapper">
+        <img src="img/ghana.png" alt="Billede 3">
+        <h3>Ghana</h3>
+      </div>
+      <div class="image-wrapper">
+        <img src="img/jordan.png" alt="Billede 4">
+        <h3>Jordan</h3>
+      </div>
     </div>
-    <div class="image-wrapper1">
-      <img src="img/skal-slettes.png" alt="Billede 2">
-      <h3> Lebanon</h3>
+  
+    <div class="billede-container2">
+  
+      <div class="image-wrapper">
+        <img src="img/tunisia.png" alt="Billede 1">
+        <h3> Tunisia</h3>
+      </div>
+      <div class="image-wrapper">
+        <img src="img/lebanon.png" alt="Billede 2">
+        <h3>Lebanon</h3>
+      </div>
+      <div class="image-wrapper">
+        <img src="img/somaliland.png" alt="Billede 3">
+        <h3>Somaliland</h3>
+      </div>
     </div>
-    <div class="image-wrapper1">
-      <img src="img/skal-slettes.png" alt="Billede 3">
-      <h3>Somaliland</h3>
-    </div>
-  </div>
 
 
 
