@@ -1,0 +1,5 @@
+
+<button onlick="changelanguage('en')">English</button>
+<button onlick="changelanguage('da')"><Danish></button>
+
+function changelanguage

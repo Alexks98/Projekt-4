@@ -25,12 +25,15 @@
       </div>
     <div class="nav-links" id="navLinks">
       <ul>
-        <li><a href="index.html" id="NavTitle1">WHAT WE DO</a></li>
-        <li><a id="NavTitle2">WHO WE ARE</a></li>
-        <li><a id="NavTitle3"> WHERE WE WORK</a></li>
-        <li><a href="get-involved.html" id="NavTitle4">GET INVOLVED</a></li>  
-        <button onclick="toggleLanguage()">EN</button>
+        <li><a href="index.html" id="navTitle1">WHAT WE DO</a></li>
+        <li><a id="navTitle2">WHO WE ARE</a></li>
+        <li><a id="navTitle3"> WHERE WE WORK</a></li>
+        <li><a href="get-involved.html" id="navTitle4">GET INVOLVED</a></li>  
       </ul>
+      <div id="languageToggle" data-lang="en">
+        <button onclick="toggleLanguage('en')">English</button>
+        <button onclick="toggleLanguage('da')">Danish</button>
+    </div>
     </div>
     <div class="hamburger">
       <span id="openHam">&#9776;</span> <!--burger-->
@@ -40,7 +43,7 @@
 </header>
 
   <div class="knap-box">
-    <a href="get-involved.html" class="CTA" id="JoinUs">JOIN US</a>
+    <a href="get-involved.html" class="CTA" id="joinUs">JOIN US</a>
   </div>
   <div>
     <img src="./img/slogan.png" alt="we-love-asphalt" class="slogan">
@@ -54,19 +57,19 @@
     <div class="sort-box">
       <div class="grid">
         <div class="grid-item">
-            <p id="Globe"> 9 COUNTRIES</p>
+            <p id="globe"> 9 COUNTRIES</p>
             <img src="./img/map-icon-white.png" alt="map-icon-white" class="map-icon-white">
         </div>
         <div class="grid-item">
-            <p id="HandShake"> 40 PARTNERS</p>
+            <p id="handShake"> 40 PARTNERS</p>
             <img src="./img/partners-icon-white.png" alt="partners-icon-white" class="partners-icon-white">
         </div>
         <div class="grid-item">
-            <p id="Members"> 135 MEMBERS</p>
+            <p id="members"> 135 MEMBERS</p>
             <img src="./img/memebers-icon-white.png" alt="memebers-icon-white" class="memebers-icon-white">
         </div>
         <div class="grid-item">
-            <p id="Awards"> 19 AWARDS</p>
+            <p id="awards"> 19 AWARDS</p>
             <img src="./img/award-white.png" alt="award-white" class="award-white">
         </div>
       </div>
@@ -78,9 +81,9 @@
 <div class="om-game">
     <div class="content">
         <img src="img/logo-black.png" alt="logo" class="centered-image">
-        <p class="centered-text" id="AboutDescription">GAME strives for a world with equal opportunities for all children and youth. GAME is an international NGO working for social change through youth-led street sports and culture in Africa, Europe and the Middle East. 
+        <p class="centered-text" id="aboutDescription">GAME strives for a world with equal opportunities for all children and youth. GAME is an international NGO working for social change through youth-led street sports and culture in Africa, Europe and the Middle East. 
         </p>
-        <a href="#" class="read-more-knap" id="AboutReadMore">READ MORE</a>
+        <a href="#" class="read-more-knap" id="aboutReadMore">READ MORE</a>
       </div>
 
 </div>
@@ -93,28 +96,28 @@
 
 <!--GAME FIGHTS FOR-->
 <div class="h1-sort">
-    <h1 id="FightForTitle"> GAME FIGHTS FOR</h1>
+    <h1 id="fightForTitle"> GAME FIGHTS FOR</h1>
 </div>
 <div class="container2">
 
     <div class="image-wrapper">
       <img src="img/empowerment.jpg" alt="innovation">
-       <div class="h3-sort"><h3 id="Empowerment"> Empowerment</h3>
+       <div class="h3-sort"><h3 id="empowerment"> Empowerment</h3>
       </div>
     </div>
     <div class="image-wrapper">
       <img src="img/leadership.png" alt="leadership">
-      <div class="h3-sort"><h3 id="Leadership">Leadership</h3>
+      <div class="h3-sort"><h3 id="leadership">Leadership</h3>
       </div>
     </div>
     <div class="image-wrapper">
       <img src="img/sustainbility.jpg" alt="Billede 3">
-      <div class="h3-sort"><h3 id="Sustainability">Sustainability</h3>
+      <div class="h3-sort"><h3 id="sustainability">Sustainability</h3>
       </div>
     </div>
     <div class="image-wrapper">
       <img src="img/innovation.png" alt="Billede 4">
-      <div class="h3-sort"><h3 id="Innovation">Innovation</h3>
+      <div class="h3-sort"><h3 id="innovation">Innovation</h3>
       </div>
     </div>
   </div>
@@ -124,30 +127,30 @@
 
   <div class="container3">
     <div class="h1-hvid">
-    <h1 id="SupportGame"> WAYS TO SUPPORT GAME</h1>
+    <h1 id="supportGame"> WAYS TO SUPPORT GAME</h1>
     </div>
     <div class="columns">
       <div class="column">
         <div class="box"> 
           <img src="img/donation-icon.png" alt="Donation Icon" class="donation-icon">
-          <p id="Donation"> Make a donation! <br> Donations Boost Capacity: <br> More Resources for Community Impact</p> 
+          <p id="donation"> Make a donation! <br> Donations Boost Capacity: <br> More Resources for Community Impact</p> 
         </div>
         <hr class="separator">
         <div class="box"> 
           <img src="img/partnership-icon.png" alt="Partnership Icon" class="partnership-icon"> 
-          <p id="BecomePartner">Become a business partner! <br> Drive Growth: <br> Collaborate for Expanded Reach</p>
+          <p id="becomePartner">Become a business partner! <br> Drive Growth: <br> Collaborate for Expanded Reach</p>
         </div>
 
       </div>
       <div class="column">
         <div class="box"> 
           <img src="img/t-shirt-icon.png" alt="Purchase Icon" class="purchase-icon">
-          <p id="SupportWebShop">Support our webshop here! <br> Purchases Power Operations: <br> Shop to Fund Our Day-to-Day Impact </p>
+          <p id="supportWebShop">Support our webshop here! <br> Purchases Power Operations: <br> Shop to Fund Our Day-to-Day Impact </p>
         </div>
         <hr class="separator">
         <div class="box"> 
           <img src="img/sponser-icon.png" alt="Sponser Icon" class="sponser-icon">
-          <p id="ProgramDonor"> Become a program donor! <br> Sponsor Programs, Sustain Success: <br> Your Funding Keeps Initiatives Thriving</p>
+          <p id="programDonor"> Become a program donor! <br> Sponsor Programs, Sustain Success: <br> Your Funding Keeps Initiatives Thriving</p>
         </div>
       </div>
     </div>
@@ -164,7 +167,7 @@
 
 <!--STORTIES FROM GAME-->
   <div class="h1-sort">
-    <h1>STORIES FROM GAME</h1>
+    <h1 id="storiesGame">STORIES FROM GAME</h1>
   </div>
   
   <div class="gallery-container">
@@ -212,14 +215,14 @@
 
 <div class="nyhedsbrev">
   <div class="h1-hvid">
-  <h1>SIGN UP FOR OUR NEWSLETTER</h1>
+  <h1 id="signUpNewsletter">SIGN UP FOR OUR NEWSLETTER</h1>
   </div>
   <from id="nyhedsbrevFrom">
      <input type="email" id="email" name="email" placeholder="Email" required>
      <CTA2 type="submit">SIGN UP</CTA2>
   </from>
   <div class="h3-hvid">
-    <h3>Be the first to get the news!</p>
+    <h3 id="getNews">Be the first to get the news!</p>
   </div>
 
 <div class="tilmelding">
@@ -261,12 +264,12 @@
   </div>
   <nav1>
     <ul>
-      <li><a href="#" id="Contact">CONTACT</a></li>
-      <li><a href="#" id="Booking">BOOKING</a></li>
-      <li><a href="#" id="Press">PRESS</a></li>
-      <li><a href="#" id="DonorsPartners">LIST OF DONORS AND PARTNERS</a></li>
-      <li><a href="#" id="JobInternship">JOBS AND INTERNSHIPS</a></li>
-      <li><a href="#" id="Webhop">WEBSHOP</a></li>
+      <li><a href="#" id="contact">CONTACT</a></li>
+      <li><a href="#" id="booking">BOOKING</a></li>
+      <li><a href="#" id="press">PRESS</a></li>
+      <li><a href="#" id="donorsPartners">LIST OF DONORS AND PARTNERS</a></li>
+      <li><a href="#" id="jobInternship">JOBS AND INTERNSHIPS</a></li>
+      <li><a href="#" id="webShop">WEBSHOP</a></li>
     </ul>
   </nav1>
 

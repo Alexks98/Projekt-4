@@ -1,5 +1,5 @@
 //html part of the toggle language
-<div id= "languageToggle" data-lang="en">
+<div id= "languageToggle">
     <button onclick="changeLanguage('en')">English</button>
     <button onclick="changeLanguage('da')">Danish</button>
 </div>
@@ -69,27 +69,8 @@ let languageContent={
         "webShop": "WEBSHOP"
     }
 }
-//Function to switch the language
-function switchLang(da) {
-    console.log("Switching language to", lang)
+function switchcLang(lang) {
     for (let key in languageContent[lang]) {
-        document.getElementById(key).innerHTML = languageContent[lang][key];
+        document.getElementById(key).innerHTML=languageContent[lang][key];
     }
 }
-
-//Function to toggle the language
-function toggleLanguage(da) {
-    let currentLang = document.getElementById("languageToggle").dataset.lang;
-    let newLang = currentLang === "en" ? "da" : "en"; // Toggle between English and Danish
-    switchLang(da); // Switch the language
-    document.getElementById("languageToggle").dataset.lang = newLang; // Update the data-lang attribute
-}
-
-toggleLanguage();
-
-
-
-
-
-
-

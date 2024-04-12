@@ -757,3 +757,14 @@ nav1 ul li a {
     padding-bottom: 35px;
     margin: 55px 230px;
 }
+
+/*For Danish Text Translations*/
+#navTitle1, #navTitle2, #navTitle3, #navTitle4 {
+color: white;
+display: block;
+visibility: visible;
+opacity: 1;
+}
+
+
+
