@@ -185,8 +185,16 @@ h3 {
     }
 }
 
+/*--Slogan dropdown CSS--*/
+  .drop-down {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: top 0.5s ease;
+    z-index: 999; /* Ensure the slogan stays above other content */
+}
 
-  
 
 
 
@@ -358,7 +366,6 @@ color: #232B30;
 .image-wrapper h3 {
     margin-top: 10px; 
 }
-
 
 
 
@@ -662,19 +669,6 @@ CTA2 {
     border: none;
 }
  
-CTA2:hover {
-
-}
-
-
-
-
-
-
-
-
-
-
 
 /*--footer--*/
 
@@ -778,4 +772,5 @@ opacity: 1;
     background-color: transparent;
     border: none;
 }
+
 
