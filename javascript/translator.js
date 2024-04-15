@@ -65,6 +65,9 @@ let languageContent={
         "webShop": "WEBSHOP"
     }
 }
+
+let myArray = [1, 2, 3, 4, 5];
+
 //Function to switch the language
 function switchLang(lang) {
     for (let key in languageContent[lang]) {
