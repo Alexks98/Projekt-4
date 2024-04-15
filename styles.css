@@ -425,12 +425,12 @@ color: #232B30;
 
 
 
-/*-----------------------STORIES FROM GAME----------------------*/
+/*-----------------------STORIES FROM GAME-----*/
 .gallery {
     width: 100%;
 }
 
-.gallery-container {
+.gallery-container{
     align-items: center;
     display: flex;
     height: 400px;
@@ -455,7 +455,7 @@ color: #232B30;
     transform: translateX(-50%);
 }
 
-.gallery-item-2, .gallery-item-4 {
+.gallery-item-2, .gallery-item-4{
     height: 250px;
     opacity: 0.8;
     width: 380px;
@@ -511,7 +511,7 @@ color: #232B30;
 }
 
 .gallery-controls-previous::before {
-    border: solid #000;
+    border: solid #232B30;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -524,7 +524,7 @@ color: #232B30;
     transition: left 0.15s ease-in-out;
     width: 5px;
 }
-.gallery-controls-previous:hover::before {
+.gallery-controls-previous:hover::before{
     left: -40px;
 }
 
@@ -533,7 +533,7 @@ color: #232B30;
 }
 
 .gallery-controls-next::before {
-    border: solid #000;
+    border: solid #232B30;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -550,7 +550,7 @@ color: #232B30;
     right: -40px;
 }
 
-.gallery-nav {
+.gallery-nav{
     bottom: -15px;
     display: flex;
     justify-content: center;
@@ -560,16 +560,17 @@ color: #232B30;
     width: 100%;
 }
 
-.gallery nav li {
+.gallery-nav li{
     background: #ccc;
     border-radius: 50%;
     height: 10px;
     margin: 0 16px;
     width: 10px;
 }
-.gallery-nav li.gallery-item-selected {
+.gallery-nav li.gallery-item-selected{
     background: #555;
 }
+
 
 
 
@@ -619,6 +620,11 @@ color: #232B30;
     margin-bottom: 50px;
 }
 
+
+
+
+
+
 /*--newsletter--*/
 
 .nyhedsbrev {
@@ -661,10 +667,7 @@ CTA2 {
     box-shadow: 0 0 0 5px white;
     border: none;
 }
- 
-CTA2:hover {
 
-}
 
 
 
