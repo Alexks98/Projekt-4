@@ -36,7 +36,7 @@ let languageContent={
     "da":{
         "navTitle1": "HVAD VI GØR",
         "navTitle2": "HVEM VI ER",
-        "navTitle3": "HVOR VI ARBEJDE",
+        "navTitle3": "HVOR VI ARBEJDER",
         "navTitle4": "BLIV INVOLVERET",
         "joinUs": "VÆR MED",
         "globe": "9 LANDE",
