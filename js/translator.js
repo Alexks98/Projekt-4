@@ -67,7 +67,6 @@ let languageContent={
 }
 //Function to switch the language
 function switchLang(lang) {
-    alert(lang);
     for (let key in languageContent[lang]) {
         document.getElementById(key).innerHTML = languageContent[lang][key];
     }
@@ -81,7 +80,7 @@ function toggleLanguage(da) {
     document.getElementById("languageToggle").dataset.lang = newLang; // Update the data-lang attribute
 }
 
-toggleLanguage("da");
+toggleLanguage("EN");
 
 
 
