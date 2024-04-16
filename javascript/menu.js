@@ -1,9 +1,33 @@
+
+//put indhold i menu//
+const menuItems = [
+  { text: 'WHAT WE DO', link: 'index.html' },
+  { text: 'WHO WE ARE', link: '#' },
+  { text: 'WHERE WE WORK', link: '#' },
+  { text: 'GET INVOLVED', link: 'get-involved.html' }
+];
+
+const navLinks = document.querySelector('#navLinks ul');
+
+let i=1; //global//
+
+menuItems.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.textContent = item.text;
+    a.href = item.link;
+    a.setAttribute("id", "navTitle" + i);
+    li.appendChild(a);
+    navLinks.appendChild(li);
+    i++;
+});
+
+
+//event/funktion//
 let openHam = document.querySelector('#openHam');
 let closeHam = document.querySelector('#closeHam');
 let navigationItems = document.querySelector('#navLinks'); //varialer, globalt scope//
 
-
-//event/funktion//
 const hamburgerEvent = (navigation, close, open) => {
   navigationItems.style.display = navigation;
   closeHam.style.display = close;
@@ -25,5 +49,4 @@ const hamburgerEvent = (navigation, close, open) => {
 };
 openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
 closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
-//  mangler Arrays, Loops, //
 
