@@ -300,6 +300,7 @@ h3 {
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
+    border-radius: 5px;
 }
 
 .read-more-knap:hover {
@@ -491,7 +492,7 @@ h3 {
 .gallery-container{
     align-items: center;
     display: flex;
-    height: 400px;
+    height: 300px;
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
@@ -556,9 +557,10 @@ h3 {
     border: 0;
     cursor: pointer;
     font-size: 30px;
-    margin: 0 50px;
-    padding: 0 12px;
+    margin: 0 100px;
+    padding: 0 5px;
     text-transform: capitalize;
+    font-family:"Bree Serif", serif;;
 }
 .gallery-controls-button:focus {
     outline: none;
@@ -628,7 +630,35 @@ h3 {
 .gallery-nav li.gallery-item-selected{
     background: #555;
 }
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin-top: 5px; 
+    margin-bottom: 20px;
+}
+.see-more-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #232B30;
+    padding: 12px 30px; /* Justeret padding for mindre skærme */
+    font-size: 20px; /* Justeret tekststørrelse for mindre skærme */
+    background: #232B30;
+    position: relative;
+    cursor: pointer;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 5px;
+}
 
+.see-more-button:hover {
+    border: 1px solid #232B30;
+    transition: 1s;
+    transform: scale(1.1);
+}
 
 
 /*---Video---*/
