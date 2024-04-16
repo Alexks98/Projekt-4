@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             // If not, remove the 'visible' class to hide the slogan
             console.log("Removing 'visible' class from slogan");
-            slogan.classList.remove('visivle');
+            slogan.classList.remove('visible');
         }
     });
 });
