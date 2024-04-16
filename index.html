@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--SPROG???????????????????-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt 4</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="js/translator.js" defer></script>
+    <script src="javascript/translator.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Suez+One&display=swap" rel="stylesheet">
     <script src="javascript/menu.js" defer></script>
-   <script src="javascript/carousel.js" defer></script>
+    <script src="javascript/carousel.js" defer></script>
+    <script src="javascript/slogan-drop.js" defer></script>
 </head>
 
 <body>
@@ -25,14 +26,10 @@
       </div>
     <div class="nav-links" id="navLinks">
       <ul>
-        <li><a href="index.html" id="navTitle1">WHAT WE DO</a></li>
-        <li><a id="navTitle2">WHO WE ARE</a></li>
-        <li><a id="navTitle3"> WHERE WE WORK</a></li>
-        <li><a href="get-involved.html" id="navTitle4">GET INVOLVED</a></li>  
       </ul>
       <div id="languageToggle" data-lang="en">
-        <button onclick="toggleLanguage('en')">English</button>
-        <button onclick="toggleLanguage('da')">Danish</button>
+        <button class="CTA3" onclick="toggleLanguage('en')">EN</button>
+        <button class="CTA3" onclick="toggleLanguage('da')">DA</button>
     </div>
     </div>
     <div class="hamburger">
@@ -42,7 +39,7 @@
   </nav>
 </header>
 
-  <div class="knap-box">
+  <div">
     <a href="get-involved.html" class="CTA" id="joinUs">JOIN US</a>
   </div>
   <div>
@@ -183,36 +180,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--Newsletter-->
 
 <div class="nyhedsbrev">
@@ -229,34 +196,11 @@
 
 <div class="tilmelding">
   <div class="h3-hvid">
-      <h3> Tak for din tilmelding!</h3>
+      <h3 id="thankU"> Thank you for signing up!</h3>
   </div>
 </div>
 </div>
 <script scr="script.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--Footer-->
@@ -285,7 +229,5 @@
   <div class="footer-text">
     <p>COMPLAINTS <span class="spacer"></span> PRIVACY POLICY</p>
   </div>
-
-
 </footer>
 

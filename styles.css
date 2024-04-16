@@ -91,15 +91,7 @@ h3 {
     width: 100%;
 }
 
-.knap-box{
-    width: 240px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
+
 .CTA{
     display: inline-block;
     text-decoration: none;
@@ -113,6 +105,13 @@ h3 {
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
+    width: 240px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
 
 }
 .CTA:hover{
@@ -131,16 +130,25 @@ h3 {
 .languagebutton{
     margin-left: 20px;
 }
+
 .slogan{
-    position: relative;
-    top: 120px; 
+    position: absolute;
+    top: 200px; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    width: 90%; 
-    max-width: 400px;
+    width: 100pc;  
+    max-width: 600px;
     height: auto;
-    padding: 60px;
     text-align: center;
+    visibility: hidden;
+    z-index: -1;
+    transition: top 0.5s ease, visibility 0.5s ease;
+}
+
+
+.slogan.visible{
+    top: calc(50% + 60px);
+    visibility: visible;
 }
 
 .hamburger {
@@ -150,17 +158,16 @@ h3 {
     color: white;
   }
   
-
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .hamburger {
         display: flex;
         cursor: pointer;
-      }
-      .hamburger #closeHam {
+    }
+    .hamburger #closeHam {
         display: none;
-      }
+    }
 
-      .nav-links {
+    .nav-links {
         display: none;
         flex-direction: column;
         align-items: center;
@@ -172,7 +179,7 @@ h3 {
         height: calc(100vh - 58px);
         padding-top: 60px;
         gap: 10vh;
-      }
+    }
 
     .nav-links ul li {
       display: block;
@@ -180,15 +187,17 @@ h3 {
     }
 
     .nav-links.active .slogan,
-    .nav-links.active .join-us-knap {
+    .nav-links.active .CTA {
         display: none;
     }
+
+    .CTA {
+        padding: 10px 30px; /* Juster padding for at tilpasse knappen på mindre skærme */
+        font-size: 24px; /* Juster fontstørrelsen for at tilpasse knappen på mindre skærme */
+        width: auto; /* Ændr bredden til auto for at tillade dynamisk tilpasning */
+    }
 }
-
-
   
-
-
 
 /*--sort-kasse--*/
 .container {
@@ -210,7 +219,7 @@ h3 {
     grid-gap: 2%; 
     padding: 2% 2%;
 }
-  
+
 .grid-item {
     color: #fff;
     text-align: center;
@@ -218,26 +227,29 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
-    
 }
+
 .map-icon-white{
     width: 50%;
     max-width: 70px;
     height: auto;
     margin-top: 2%;
 }
+
 .partners-icon-white{
     width: 50%;
     max-width: 70px;
     height: auto;
     margin-top: 2%;
 }
+
 .memebers-icon-white{
     width: 50%;
     max-width: 70px;
     height: auto;
     margin-top: 2%;
 }
+
 .award-white{
     width: 50%;
     height: auto;
@@ -248,115 +260,169 @@ h3 {
 
 
 /*--om game--*/
-.om-game{
+.om-game {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 50vh;
+    height: 100%;
 }
-  
+
 .content {
     text-align: center;
     width: 70%;
 }
-  
+
 .centered-image {
     width: 200px;
     display: block;
     margin: 20px auto 20px; 
 }
-  
+
 .centered-text {
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
     font-size: 35px;
-    
 }
-  
-.read-more-knap{
+
+.read-more-knap {
     display: inline-block;
     text-decoration: none;
     color: white;
     border: 1px solid #232B30;
-    padding: 14px 35px;
-    font-size: 25px; /*--tekst-størrelse-her--*/
+    padding: 12px 30px; /* Justeret padding for mindre skærme */
+    font-size: 20px; /* Justeret tekststørrelse for mindre skærme */
     background: #232B30;
     position: relative;
     cursor: pointer;
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
-    
-
 }
-.read-more-knap:hover{
+
+.read-more-knap:hover {
     border: 1px solid #232B30;
     transition: 1s;
     transform: scale(1.1);
 }
 
 
+
 /*--seperations-linje--*/
 .separator-line {
     border-top: 2px solid #232B30;
     width: 80%;
-    margin: 130px auto; /* Juster margenen efter behov */
+    margin: 80px auto; 
     margin-bottom: 0;
 }
 
 
+@media screen and (max-width: 768px) {
+    .content {
+        width: 80%; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .content {
+        width: 90%; 
+    }
+
+    .centered-text {
+        font-size: 28px; 
+        margin-bottom: 15px; 
+    }
+
+    .read-more-knap {
+        padding: 10px 25px; 
+        font-size: 18px; 
+    }
+
+    .separator-line {
+        margin: 50px auto; 
+    }
+}
 
 /*--GAME FIGHTS FOR--*/
 
-.h1-sort{
-  text-align: center; /* Centrerer teksten vandret */
-  margin-top: 35px; /* Juster topmargenen efter behov */
-  margin-bottom: 35px;
+.h1-sort {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
-.h1-sort h1{
+
+.h1-sort h1 {
     color: #232B30;
 }
-.h3-sort h3{
-color: #232B30;
+
+.h3-sort h3 {
+    color: #232B30;
 }
 
 .container2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: 90px;
-    margin-right: 90px;
-    padding-bottom: 35px;
+    margin-left: 10px; 
+    margin-right: 10px; 
     margin-bottom: 45px;
+    padding-bottom: 35px;
 }
-  
+
 .image-wrapper {
-    width: 200px; 
-    height: 350px; 
-    border-radius: 10px; 
+    width: calc(50% - 20px);
+    max-width: 200px; 
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
     position: relative;
-    margin: 0 auto;
+    margin-left: 30px;
+    margin-right: 30px;
 }
+
 .image-wrapper a {
     text-decoration: none;
-    color: inherit; 
-    width: 200px; 
-    height: 350px; 
+    color: inherit;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-  }
-.image-wrapper img {
-        width: 100%; 
-        height: 100%; 
-        object-fit: cover; 
-        top: 0; 
-        left: 0; 
-        border-radius: 10px;
 }
-  
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
 .image-wrapper h3 {
-    margin-top: 10px; 
+    margin-top: 10px;
+    text-align: center; 
+}
+
+
+@media only screen and (max-width: 500px) {
+    .container2 {
+        margin-left: 5px; 
+        margin-right: 5px; 
+    }
+
+    .image-wrapper {
+        width: calc(50% - 10px); 
+        max-width: 150px; 
+        margin: 5px; 
+    }
+
+    /* Juster margener for at skabe en større afstand mellem de to grupper af billeder */
+    .image-wrapper:nth-child(3),
+    .image-wrapper:nth-child(4) {
+        margin-top: 70px;
+    }
 }
 
 
@@ -565,27 +631,7 @@ color: #232B30;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------Video-----------*/
+/*---Video---*/
 .video-box {
     position: relative; 
     width: 100%;
