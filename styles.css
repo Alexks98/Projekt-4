@@ -832,5 +832,17 @@ visibility: visible;
 opacity: 1;
 }
 
+.CTA3 {
+    color: white;
+    text-decoration: underline;
+    font-size: 15px; /*--tekst-størrelse-her--*/
+    font-family: "Suez One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+}
 
 
