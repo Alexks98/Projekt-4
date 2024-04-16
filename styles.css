@@ -49,6 +49,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
   }
   nav {
     width: 100%;
@@ -91,7 +93,6 @@ h3 {
     width: 100%;
 }
 
-
 .CTA{
     display: inline-block;
     text-decoration: none;
@@ -112,6 +113,7 @@ h3 {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    border-radius: 5px;
 
 }
 .CTA:hover{
@@ -132,19 +134,17 @@ h3 {
 }
 
 .slogan{
-    position: absolute;
-    top: 200px; 
+    position: relative;
+    top: -320px; 
     left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 100pc;  
+    transform: translateX(-50%);
+    width: 100%;  
     max-width: 600px;
     height: auto;
     text-align: center;
-    visibility: hidden;
-    z-index: -1;
-    transition: top 0.5s ease, visibility 0.5s ease;
+    transition: top 3s ease, visibility 0.5s ease;
+    z-index: 1;
 }
-
 
 .slogan.visible{
     top: calc(50% + 60px);
@@ -706,6 +706,7 @@ h3 {
 }
 .h3-hvid h3{
     color: #fff;
+    margin-bottom: 30px;
 } 
 
 input[type="email"] {
@@ -721,7 +722,7 @@ input[type="email"] {
     width: 600px;
 }
 
-CTA2 {
+.signupknap {
     margin-left: 10px;
     margin-top: 15px;
     margin-bottom: 1px;
@@ -736,9 +737,18 @@ CTA2 {
     box-shadow: 0 0 0 5px white;
     border: none;
 }
+<<<<<<< Updated upstream
+=======
+ 
+.signupknap :hover {
+    color: #ECECEC;
+>>>>>>> Stashed changes
 
 
+.alert {
+color: aqua;
 
+}
 
 
 

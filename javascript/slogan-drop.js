@@ -1,28 +1,26 @@
-// Wait for the DOM content to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-    // Select the slogan element
     const slogan = document.querySelector('.slogan');
-    console.log(slogan); //This is to check if the slogang element is correctly selected 
+    const navHeight = 60; // Height of the navigation bar
+    let isAbove = true;
 
-    // This add's a scroll event listener to the window
-    window.addEventListener('scroll', function() {
-        // Get the current scroll position
-        const scrollPosition = window.scrollY;
-        console.log("SCcrolle position;", scrollPosition); //This is to check the current scroll position
-        
-        // This defines the threshold where the slogan should start appearing
-        const threshold = 100;
-        console.log("Threshold:", threshold); // This is to check the treshold value
-        
-        // This is to check if the scroll position has crossed the threshold
-        if (scrollPosition > threshold) {
-            // If yes, add the 'visible' class to make the slogan appear
-            console.log("Adding 'visible' class to slogan");
-            slogan.classList.add('visible');
+    // Function to toggle slogan position
+    function toggleSloganPosition() {
+        if (isAbove) {
+            slogan.style.top = navHeight + 'px';
+            console.log("Slogan moved above navigation bar.");
         } else {
-            // If not, remove the 'visible' class to hide the slogan
-            console.log("Removing 'visible' class from slogan");
-            slogan.classList.remove('visible');
+            slogan.style.top = '-' + (100 - navHeight) + 'px';
+            console.log("Slogan moved below navigation bar.");
         }
-    });
+        isAbove = !isAbove;
+    }
+
+    // Initial animation
+    toggleSloganPosition();
+
+    // Continuous loop animation
+    setInterval(function() {
+        toggleSloganPosition();
+    }, 3000); // Adjust the interval as needed (3000ms = 3 seconds)
 });
+
