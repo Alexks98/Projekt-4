@@ -27,6 +27,7 @@ let languageContent={
         "storiesGame": "STORIES FROM GAME",
         "signUpNewsletter": "SIGN UP FOR OUR NEWSLETTER",
         "getNews": "Be the first to get the news!",
+        "thankU": "Thank you for signing up",
         "contact": "CONTACT",
         "booking": "BOOKING",
         "donorsPartners": "LIST OF DONORS AND PARTNERS",
@@ -36,7 +37,7 @@ let languageContent={
     "da":{
         "navTitle1": "HVAD VI GØR",
         "navTitle2": "HVEM VI ER",
-        "navTitle3": "HVOR VI ARBEJDE",
+        "navTitle3": "HVOR VI ARBEJDER",
         "navTitle4": "BLIV INVOLVERET",
         "joinUs": "VÆR MED",
         "globe": "9 LANDE",
@@ -58,6 +59,7 @@ let languageContent={
         "storiesGame": "HISTORIE FRA GAME",
         "signUpNewsletter": "SKRIV DIG OP TIL VORES NYHEDSBREV",
         "getNews": "Vær den første til at få nyhederne",
+        "thankU": "Tak for din tilmelding",
         "contact": "KONTACT",
         "booking": "BESTILLING",
         "donorsPartners": "LISTE OVER DONORER OG PARTNERE",
@@ -65,6 +67,9 @@ let languageContent={
         "webShop": "WEBSHOP"
     }
 }
+
+let myArray = [1, 2, 3, 4, 5];
+
 //Function to switch the language
 function switchLang(lang) {
     for (let key in languageContent[lang]) {

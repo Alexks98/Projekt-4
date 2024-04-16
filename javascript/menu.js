@@ -14,12 +14,12 @@ const hamburgerEvent = (navigation, close, open) => {
       navigationItems.classList.add('active');
       // Skjul slogan og "Join Us" -knappen når hamburgermenuen er åben
       document.querySelector('.slogan').style.display = 'none';
-      document.querySelector('.join-us-knap').style.display = 'none';
+      document.querySelector('.CTA').style.display = 'none';
   } else {
       navigationItems.classList.remove('active');
       // Vis slogan og "Join Us" -knappen når hamburgermenuen er lukket
       document.querySelector('.slogan').style.display = 'block';
-      document.querySelector('.join-us-knap').style.display = 'block';
+      document.querySelector('.CTA').style.display = 'block';
   }
 
 };
