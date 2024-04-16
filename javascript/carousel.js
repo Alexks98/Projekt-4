@@ -1,7 +1,7 @@
-const galleryContainer = document.querySelector('.gallery-container');
-const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'next'];
-const galleryItems = document.querySelectorAll('.gallery-item');
+const galleryContainer = document.querySelector('.gallery-container'); //variables/
+const galleryControlsContainer = document.querySelector('.gallery-controls'); //variables/
+const galleryControls = ['previous', 'next']; //an array//
+const galleryItems = document.querySelectorAll('.gallery-item'); //variables/
 
 class Carousel {
 
@@ -11,6 +11,7 @@ class Carousel {
         this.carouselArray = [...items];
     }
 
+    //Loop number 1//
     updateGallery() {
         this.carouselArray.forEach(el => {
             el.classList.remove('gallery-item-1', 'gallery-item-2', 'gallery-item-3', 'gallery-item-4', 'gallery-item-5');
@@ -20,6 +21,8 @@ class Carousel {
             el.classList.add(`gallery-item-${i + 1}`);
         });
     }
+
+    //if-else control structure//
     setCurrentState(control) {
         if (control.classList.contains('gallery-controls-previous')) {
             this.carouselArray.unshift(this.carouselArray.pop());
@@ -38,6 +41,7 @@ class Carousel {
         });
     }
     
+    //Loop number 2//
     useControls() {
         const triggers = [...galleryControlsContainer.childNodes];
         triggers.forEach(control => {
