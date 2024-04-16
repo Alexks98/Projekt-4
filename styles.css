@@ -113,6 +113,7 @@ h3 {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    border-radius: 5px;
 
 }
 .CTA:hover{
@@ -299,6 +300,7 @@ h3 {
     font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
+    border-radius: 5px;
 }
 
 .read-more-knap:hover {
@@ -482,16 +484,15 @@ h3 {
 
 
 
-
-/*-----------------------STORIES FROM GAME----------------------*/
+/*--STORIES FROM GAME--*/
 .gallery {
     width: 100%;
 }
 
-.gallery-container {
+.gallery-container{
     align-items: center;
     display: flex;
-    height: 400px;
+    height: 300px;
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
@@ -513,7 +514,7 @@ h3 {
     transform: translateX(-50%);
 }
 
-.gallery-item-2, .gallery-item-4 {
+.gallery-item-2, .gallery-item-4{
     height: 250px;
     opacity: 0.8;
     width: 380px;
@@ -547,7 +548,7 @@ h3 {
 .gallery-controls {
     display: flex;
     justify-content: center;
-    margin: 25px 0;
+    margin: 0 0;
     height: 100px;
 }
 
@@ -556,9 +557,11 @@ h3 {
     border: 0;
     cursor: pointer;
     font-size: 30px;
-    margin: 0 50px;
-    padding: 0 12px;
+    margin: 0 100px;
+    padding: 0 5px;
     text-transform: capitalize;
+    font-family:"Bree Serif", serif;
+    font-weight: 100;
 }
 .gallery-controls-button:focus {
     outline: none;
@@ -569,8 +572,8 @@ h3 {
 }
 
 .gallery-controls-previous::before {
-    border: solid #000;
-    border-width: 0 5px 5px 0;
+    border: solid #232B30;
+    border-width: 0 2px 2px 0;
     content: '';
     display: inline-block;
     height: 5px;
@@ -582,7 +585,7 @@ h3 {
     transition: left 0.15s ease-in-out;
     width: 5px;
 }
-.gallery-controls-previous:hover::before {
+.gallery-controls-previous:hover::before{
     left: -40px;
 }
 
@@ -591,8 +594,8 @@ h3 {
 }
 
 .gallery-controls-next::before {
-    border: solid #000;
-    border-width: 0 5px 5px 0;
+    border: solid #232B30;
+    border-width: 0 2px 2px 0;
     content: '';
     display: inline-block;
     height: 5px;
@@ -608,7 +611,7 @@ h3 {
     right: -40px;
 }
 
-.gallery-nav {
+.gallery-nav{
     bottom: -15px;
     display: flex;
     justify-content: center;
@@ -618,25 +621,48 @@ h3 {
     width: 100%;
 }
 
-.gallery nav li {
+.gallery-nav li{
     background: #ccc;
     border-radius: 50%;
     height: 10px;
     margin: 0 16px;
     width: 10px;
 }
-.gallery-nav li.gallery-item-selected {
+.gallery-nav li.gallery-item-selected{
     background: #555;
+}
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin-top: 5px; 
+    margin-bottom: 20px;
+}
+.see-more-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #232B30;
+    padding: 12px 30px; /* Justeret padding for mindre skærme */
+    font-size: 20px; /* Justeret tekststørrelse for mindre skærme */
+    background: #232B30;
+    position: relative;
+    cursor: pointer;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 5px;
+}
+
+.see-more-button:hover {
+    border: 1px solid #232B30;
+    transition: 1s;
+    transform: scale(1.1);
 }
 
 
-
-
-
-
-
-
-/*------------Video-----------*/
+/*---Video---*/
 .video-box {
     position: relative; 
     width: 100%;
@@ -662,6 +688,11 @@ h3 {
     max-height: 80%; 
     margin-bottom: 50px;
 }
+
+
+
+
+
 
 /*--newsletter--*/
 
@@ -705,10 +736,7 @@ CTA2 {
     box-shadow: 0 0 0 5px white;
     border: none;
 }
- 
-CTA2:hover {
 
-}
 
 
 
