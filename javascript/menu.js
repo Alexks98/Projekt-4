@@ -1,5 +1,5 @@
 
-//put indhold i menu//
+//put indhold i menu// array
 const menuItems = [
   { text: 'WHAT WE DO', link: 'index.html' },
   { text: 'WHO WE ARE', link: '#' },
@@ -10,6 +10,8 @@ const menuItems = [
 const navLinks = document.querySelector('#navLinks ul');
 
 let i=1; //global//
+
+//loop//
 
 menuItems.forEach(item => {
     const li = document.createElement('li');

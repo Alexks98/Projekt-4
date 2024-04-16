@@ -707,6 +707,7 @@ h3 {
 .h3-hvid h3{
     color: #fff;
     margin-bottom: 30px;
+    margin-top: 20px;
 } 
 
 input[type="email"] {
@@ -737,23 +738,6 @@ input[type="email"] {
     box-shadow: 0 0 0 5px white;
     border: none;
 }
-<<<<<<< Updated upstream
-=======
- 
-.signupknap :hover {
-    color: #ECECEC;
->>>>>>> Stashed changes
-
-
-.alert {
-color: aqua;
-
-}
-
-
-
-
-
 
 
 
