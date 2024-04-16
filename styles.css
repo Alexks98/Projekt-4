@@ -706,6 +706,7 @@ h3 {
 }
 .h3-hvid h3{
     color: #fff;
+    margin-bottom: 30px;
 } 
 
 input[type="email"] {
@@ -721,7 +722,7 @@ input[type="email"] {
     width: 600px;
 }
 
-CTA2 {
+.signupknap {
     margin-left: 10px;
     margin-top: 15px;
     margin-bottom: 1px;
@@ -736,9 +737,18 @@ CTA2 {
     box-shadow: 0 0 0 5px white;
     border: none;
 }
+<<<<<<< Updated upstream
+=======
+ 
+.signupknap :hover {
+    color: #ECECEC;
+>>>>>>> Stashed changes
 
 
+.alert {
+color: aqua;
 
+}
 
 
 
