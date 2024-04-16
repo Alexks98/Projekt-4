@@ -33,7 +33,7 @@ class Carousel {
         this.carouselControls.forEach(control => {
             const button = document.createElement('button');
             button.className = `gallery-controls-${control}`;
-            button.innerText = control;
+            button.setAttribute('aria-label', control); // Accessibility for screen readers
             galleryControlsContainer.appendChild(button);
         });
     }
