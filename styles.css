@@ -494,7 +494,7 @@ h3 {
     display: flex;
     height: 300px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
 }
 .gallery-item {
@@ -662,6 +662,13 @@ h3 {
 }
 
 
+
+
+
+
+
+
+
 /*---Video---*/
 .video-box {
     position: relative; 
@@ -688,9 +695,6 @@ h3 {
     max-height: 80%; 
     margin-bottom: 50px;
 }
-
-
-
 
 
 
@@ -738,7 +742,6 @@ input[type="email"] {
     box-shadow: 0 0 0 5px white;
     border: none;
 }
-
 
 
 
@@ -844,5 +847,3 @@ opacity: 1;
     background-color: transparent;
     border: none;
 }
-
-
