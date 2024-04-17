@@ -18,7 +18,7 @@ class Carousel {
         });
 
         this.carouselArray.slice(0, 5).forEach((el, i) => {
-            el.classList.add(`gallery-item-${i + 1}`);
+            el.classList.add(`gallery-item-${i + 1}`); //the + symbol functions as an arithmetic operator//
         });
     }
 
@@ -38,7 +38,8 @@ class Carousel {
         this.carouselControls.forEach(control => {
             const button = document.createElement('button');
             button.className = `gallery-controls-${control}`;
-            button.setAttribute('aria-label', control); // Accessibility for screen readers//
+            let ariaLabel = control === 'previous' ? 'Go to previous item' : 'Go to next item';
+            button.setAttribute('aria-label', ariaLabel);  // Accessibility for screen readers//
             galleryControlsContainer.appendChild(button);
         });
     }
@@ -49,7 +50,7 @@ class Carousel {
         triggers.forEach(control => {
             control.addEventListener('click', e => {
                 e.preventDefault();
-                this.setCurrentState(control);
+                this.setCurrentState(control); // Calls setCurrentState to adjust the carousel
             });
         });
     }
