@@ -708,10 +708,11 @@ h3 {
     padding-bottom: 40px;
    
 }
-.h3-hvid h3{
+.news{
     color: #fff;
     margin-bottom: 30px;
     margin-top: 20px;
+    margin-right: 10px;
 } 
 
 input[type="email"] {
@@ -741,6 +742,12 @@ input[type="email"] {
     color: white;
     box-shadow: 0 0 0 5px white;
     border: none;
+}
+
+.signupknap:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    
 }
 
 
