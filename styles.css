@@ -706,6 +706,7 @@ h3 {
     border: 30px;
     padding-top: 20px;
     padding-bottom: 40px;
+
    
 }
 .news{
@@ -760,21 +761,21 @@ footer {
     padding-top: 35px;
 }
   
-nav1 ul {
+ ul {
     list-style: none;
     padding-top: 20px;
     margin: 0;
 }
   
-nav1 ul li {
+ ul li {
     display: inline-block;
 }
   
-nav1 ul li:not(:last-child) {
+ ul li:not(:last-child) {
     margin-right: 20px; 
 }
   
-nav1 ul li a {
+ ul li a {
     text-decoration: none;
     color: #000; 
     font-family: "Suez One", serif;
