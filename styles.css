@@ -708,10 +708,11 @@ h3 {
     padding-bottom: 40px;
    
 }
-.h3-hvid h3{
+.news{
     color: #fff;
     margin-bottom: 30px;
     margin-top: 20px;
+    margin-right: 10px;
 } 
 
 input[type="email"] {
