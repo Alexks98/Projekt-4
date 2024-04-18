@@ -1,7 +1,7 @@
   // Antal gange teksten skal gentages
   const repetitions = 1;
 
-  const texts = ['Be the first to get the news!', 'Stay updated with our latest news!'];
+  const texts = ['Be the first to get the news!', 'Sign up with your email'];
 
  // Elementet, hvor teksten skal indsættes
  var newsContainer = document.getElementById('newsContainer');
