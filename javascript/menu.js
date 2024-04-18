@@ -4,7 +4,7 @@ const menuItems = [
   { text: 'WHAT WE DO', link: 'index.html' },
   { text: 'WHO WE ARE', link: '#' },
   { text: 'WHERE WE WORK', link: '#' },
-  { text: 'GET INVOLVED', link: 'get-involved.html' }
+  { text: 'GET INVOLVED', link: '#' }
 ];
 
 const navLinks = document.querySelector('#navLinks ul');
