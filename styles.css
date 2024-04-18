@@ -61,6 +61,7 @@ h3 {
   .nav-links {
     display: flex;
     gap: 40px;
+    margin-bottom: 15px;
   }
 
 .nav-links ul li{
@@ -127,11 +128,10 @@ h3 {
     height: auto;
     margin-left: 3vw;
     margin-top: 10%;
+    margin-bottom: 5px;
     
 }
-.languagebutton{
-    margin-left: 20px;
-}
+
 
 .slogan{
     position: relative;
@@ -850,7 +850,7 @@ opacity: 1;
     font-family: "Suez One", serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 8px;
+    margin-top: 25px;
     letter-spacing: 1px;
     background-color: transparent;
     border: none;
