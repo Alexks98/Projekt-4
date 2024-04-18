@@ -494,7 +494,7 @@ h3 {
     display: flex;
     height: 300px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
 }
 .gallery-item {
@@ -662,6 +662,13 @@ h3 {
 }
 
 
+
+
+
+
+
+
+
 /*---Video---*/
 .video-box {
     position: relative; 
@@ -688,9 +695,6 @@ h3 {
     max-height: 80%; 
     margin-bottom: 50px;
 }
-
-
-
 
 
 
@@ -744,7 +748,6 @@ input[type="email"] {
     transform: scale(1.1);
     
 }
-
 
 
 
@@ -838,5 +841,15 @@ visibility: visible;
 opacity: 1;
 }
 
-
-
+.CTA3 {
+    color: white;
+    text-decoration: underline;
+    font-size: 15px; /*--tekst-størrelse-her--*/
+    font-family: "Suez One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+}
