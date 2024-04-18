@@ -739,6 +739,12 @@ input[type="email"] {
     border: none;
 }
 
+.signupknap:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    
+}
+
 
 
 
